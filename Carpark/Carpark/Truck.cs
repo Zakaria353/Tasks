@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Carpark;
+
+internal class Truck
+{
+
+    public void showEngine()
+    {
+
+        Engine[] engines = { new Engine(560, 14.8m, "Diesel", "TT371B56FD64U") };
+        foreach (Engine engine in engines)
+        {
+            Console.WriteLine(engine);
+        }
+
+    }
+
+    public void showTransmission()
+    {
+        Transmission[] transmissions = { new Transmission("9G-Tronic", 9, "eZx.inc") };
+        foreach (Transmission trans in transmissions)
+        {
+            Console.WriteLine(trans);
+        }
+    }
+
+    public void showChassis()
+    {
+        Chassis[] chassis = { new Chassis("P215/65R20 98H", 20, "1653 lbs") };
+        foreach (Chassis chassy in chassis)
+        {
+            Console.WriteLine(chassy);
+        }
+    }
+
+}

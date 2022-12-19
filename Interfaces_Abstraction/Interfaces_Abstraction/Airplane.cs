@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace Interfaces_Abstraction;
+﻿namespace Interfaces_Abstraction;
 
 internal class Airplane : IFlyable
 {

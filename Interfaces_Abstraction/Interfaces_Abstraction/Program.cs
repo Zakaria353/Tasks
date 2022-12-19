@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace Interfaces_Abstraction;
+﻿namespace Interfaces_Abstraction;
 
 interface IFlyable
 {

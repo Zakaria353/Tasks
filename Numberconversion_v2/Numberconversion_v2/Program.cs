@@ -4,28 +4,27 @@ public class Numberconversion
 {
     public static void ConvertToBinary()
     {
-    
     Binarycontrol:
         try
-        {
+        {   
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-                int remainder = convert % 2;
-                convert /= 2;
+                int remainder = numberToConvert % 2;
+                numberToConvert /= 2;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Binary values are: ");
             foreach (var item in values)
@@ -33,79 +32,75 @@ public class Numberconversion
                 Console.Write(item);
             }
         }
-        catch(FormatException)
+
+        catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
             goto Binarycontrol;
-        } 
-
+        }
     }
 
     public static void ConvertToTernary()
     {
-    
     Ternarycontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-
-                int remainder = convert % 3;
-                convert /= 3;
+                int remainder = numberToConvert % 3;
+                numberToConvert /= 3;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Ternary values are: ");
             foreach (var item in values)
             {
                 Console.Write(item);
             }
-
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
             goto Ternarycontrol;
         }
-
     }
 
     public static void ConvertToQuaternary()
     {
-        Quaternarycontrol:
+    Quaternarycontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-
-                int remainder = convert % 4;
-                convert /= 4;
+                int remainder = numberToConvert % 4;
+                numberToConvert /= 4;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Quaternary values are: ");
             foreach (var item in values)
@@ -113,77 +108,75 @@ public class Numberconversion
                 Console.Write(item);
             }
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
             goto Quaternarycontrol;
         }
-
     }
 
     public static void ConvertToQuinary()
     {
-        Quinarycontrol:
+    Quinarycontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-
-                int remainder = convert % 5;
-                convert /= 5;
+                int remainder = numberToConvert % 5;
+                numberToConvert /= 5;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Quinary values are: ");
             foreach (var item in values)
             {
                 Console.Write(item);
             }
-
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
             goto Quinarycontrol;
         }
-
     }
 
     public static void ConvertToSenary()
     {
-        Senarycontrol:
+    Senarycontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-                int remainder = convert % 6;
-                convert /= 6;
+                int remainder = numberToConvert % 6;
+                numberToConvert /= 6;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Senary values are: ");
             foreach (var item in values)
@@ -191,45 +184,45 @@ public class Numberconversion
                 Console.Write(item);
             }
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
             goto Senarycontrol;
         }
-
     }
 
     public static void ConvertToSeptenary()
     {
-        Septenarycontrol:
+    Septenarycontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-                int remainder = convert % 7;
-                convert /= 7;
+                int remainder = numberToConvert % 7;
+                numberToConvert /= 7;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Septenary values are: ");
             foreach (var item in values)
             {
                 Console.Write(item);
             }
-
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
@@ -239,27 +232,27 @@ public class Numberconversion
 
     public static void ConvertToOctal()
     {
-        Octalcontrol:
+    Octalcontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-                int remainder = convert % 8;
-                convert /= 8;
+                int remainder = numberToConvert % 8;
+                numberToConvert /= 8;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Octal values are: ");
             foreach (var item in values)
@@ -267,6 +260,7 @@ public class Numberconversion
                 Console.Write(item);
             }
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
@@ -276,27 +270,27 @@ public class Numberconversion
 
     public static void ConvertToNonary()
     {
-        Nonarycontrol:
+    Nonarycontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-                int remainder = convert % 9;
-                convert /= 9;
+                int remainder = numberToConvert % 9;
+                numberToConvert /= 9;
 
                 sb.Append(remainder);
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Nonary values are: ");
             foreach (var item in values)
@@ -304,29 +298,29 @@ public class Numberconversion
                 Console.Write(item);
             }
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
             goto Nonarycontrol;
         }
-
     }
 
     public static void ConvertToUndecimal()
     {
-        Undecimalcontrol:
+    Undecimalcontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-                int remainder = convert % 11;
-                convert /= 11;
+                int remainder = numberToConvert % 11;
+                numberToConvert /= 11;
                 if (remainder == 10)
                 {
                     sb.Append('A');
@@ -336,20 +330,20 @@ public class Numberconversion
                     sb.Append(remainder);
                 }
 
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Undecimal values are: ");
             foreach (var item in values)
             {
                 Console.Write(item);
             }
-
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
@@ -359,20 +353,19 @@ public class Numberconversion
 
     public static void ConvertToDuodecimal()
     {
-        Duodecimalcontrol:
+    Duodecimalcontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-
-                int remainder = convert % 12;
-                convert /= 12;
+                int remainder = numberToConvert % 12;
+                numberToConvert /= 12;
                 if (remainder == 10)
                 {
                     sb.Append('A');
@@ -386,43 +379,42 @@ public class Numberconversion
                     sb.Append(remainder);
                 }
 
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Duodecimal values are: ");
             foreach (var item in values)
             {
                 Console.Write(item);
             }
-
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
             goto Duodecimalcontrol;
         }
-
     }
 
     public static void ConvertToHexadecimal()
     {
-        Hexadecimalcontrol:
+    Hexadecimalcontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
             bool loop = true;
             while (loop)
             {
-                int remainder = convert % 16;
-                convert /= 16;
+                int remainder = numberToConvert % 16;
+                numberToConvert /= 16;
                 if (remainder == 10)
                 {
                     sb.Append('A');
@@ -452,12 +444,12 @@ public class Numberconversion
                     sb.Append(remainder);
 
                 }
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
-
             }
+
             var values = sb.ToString().Reverse();
             Console.Write($"Hexadecimal values are: ");
             foreach (var item in values)
@@ -465,6 +457,7 @@ public class Numberconversion
                 Console.Write(item);
             }
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
@@ -474,12 +467,12 @@ public class Numberconversion
 
     public static void ConvertToVigesimal()
     {
-        Vigesimalcontrol:
+    Vigesimalcontrol:
         try
         {
             Console.Write("Enter decimal number: ");
             string? str = Console.ReadLine();
-            var convert = Convert.ToInt32(str);
+            var numberToConvert = Convert.ToInt32(str);
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             Dictionary<string, int> base20 = new Dictionary<string, int>();
             {
@@ -498,9 +491,8 @@ public class Numberconversion
             bool loop = true;
             while (loop)
             {
-
-                int remainder = convert % 20;
-                convert /= 20;
+                int remainder = numberToConvert % 20;
+                numberToConvert /= 20;
 
                 if (remainder >= 10 && remainder <= 19)
                 {
@@ -515,12 +507,13 @@ public class Numberconversion
                         };
                     }
                 }
+
                 else
                 {
                     sb.Append(remainder);
                 }
 
-                if (convert == 0)
+                if (numberToConvert == 0)
                 {
                     loop = false;
                 }
@@ -532,8 +525,8 @@ public class Numberconversion
                     Console.Write(item);
                 }
             }
-        
         }
+
         catch (FormatException)
         {
             Console.WriteLine($"Invalid or no input was detected, only decimals are allowed");
@@ -543,10 +536,10 @@ public class Numberconversion
 
     static public void Main()
     {
-        Console.Write("Choose a respective number system to convert to," +
+        Console.Write("Choose a respective number system to numberToConvert to," +
         " 2 for binary, 3 for ternary, etc." + "\nValid values are 2 to 9, 11 to 12, 16, 20" +
         "\nPress \"q\" to quit. \nEnter number system: ");
-        
+
         var endapp = false;
         while (!endapp)
         {
@@ -555,76 +548,87 @@ public class Numberconversion
             {
                 endapp = true;
             }
+
             if (input == "2")
             {
                 ConvertToBinary();
                 endapp = true;
             }
-            else if(input == "3")
+
+            else if (input == "3")
             {
                 ConvertToTernary();
                 endapp = true;
             }
-            else if(input == "4") 
+
+            else if (input == "4")
             {
                 ConvertToQuaternary();
                 endapp = true;
             }
+
             else if (input == "5")
             {
                 ConvertToQuinary();
                 endapp = true;
             }
+
             else if (input == "6")
             {
                 ConvertToSenary();
                 endapp = true;
             }
+
             else if (input == "7")
             {
                 ConvertToSeptenary();
                 endapp = true;
             }
+
             else if (input == "8")
             {
                 ConvertToOctal();
                 endapp = true;
             }
+
             else if (input == "9")
             {
                 ConvertToNonary();
                 endapp = true;
             }
+
             else if (input == "11")
             {
                 ConvertToUndecimal();
                 endapp = true;
             }
+
             else if (input == "12")
             {
                 ConvertToDuodecimal();
                 endapp = true;
             }
+
             else if (input == "16")
             {
                 ConvertToHexadecimal();
                 endapp = true;
             }
+
             else if (input == "20")
             {
                 ConvertToVigesimal();
                 endapp = true;
             }
+
             else
-            {   
-                if(input != "q")
-                {   
+            {
+                if (input != "q")
+                {
                     Console.Write("Invalid input try again.\nValid values are 2 to 9, 11 to 12, 16, 20" +
                     "\nEnter number system: ");
                 }
-
             }
         }
-
     }
 }

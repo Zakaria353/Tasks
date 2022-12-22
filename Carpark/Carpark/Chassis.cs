@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Carpark;
+﻿namespace Carpark;
 
 public class Chassis
 {
@@ -17,7 +11,7 @@ public class Chassis
         WheelsNumber = wheelsnumber;
         Number = number;
         PermissibleLoad = permissibleLoad;
-
     }
+
     public override string ToString() => $"WheelsNumber:{WheelsNumber}|| Number:{Number}|| Permissibleload:{PermissibleLoad}";
 }

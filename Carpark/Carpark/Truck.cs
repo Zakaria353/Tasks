@@ -1,23 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Carpark;
+﻿namespace Carpark;
 
 internal class Truck
 {
-
     public void showEngine()
     {
-
         Engine[] engines = { new Engine(560, 14.8m, "Diesel", "TT371B56FD64U") };
         foreach (Engine engine in engines)
         {
             Console.WriteLine(engine);
         }
-
     }
 
     public void showTransmission()
@@ -37,5 +28,4 @@ internal class Truck
             Console.WriteLine(chassy);
         }
     }
-
 }

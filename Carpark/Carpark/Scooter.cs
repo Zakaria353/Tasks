@@ -1,26 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NPOI.SS.Formula.Functions;
+﻿namespace Carpark;
 
-namespace Carpark;
-
-internal class Scooter 
-{        
-
+internal class Scooter
+{
     public void showEngine()
     {
         Engine[] engines = { new Engine(80, 1.0m, "Electric", "SS5B0112FDV") };
         foreach (Engine engine in engines)
-        {   
+        {
 
             Console.WriteLine(engine);
         }
-
     }
-    
+
     public void showTransmission()
     {
         Transmission[] transmissions = { new Transmission("Automatic", 3, "SCT.inc") };
@@ -28,7 +19,6 @@ internal class Scooter
         {
             Console.WriteLine(trans);
         }
-
     }
 
     public void showChassis()
@@ -38,7 +28,5 @@ internal class Scooter
         {
             Console.WriteLine(chassy);
         }
-
     }
-
 }

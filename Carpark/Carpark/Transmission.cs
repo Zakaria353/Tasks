@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Carpark;
+﻿namespace Carpark;
 
 public class Transmission
-
 {
     public string? TransmissionType { get; set; }
     public int NumberOfGears { get; set; }
@@ -19,5 +12,6 @@ public class Transmission
         NumberOfGears = numberOfGears;
         Manufacturer = manufacturer;
     }
+
     public override string ToString() => $"Type:{TransmissionType}|| NumberOfGears:{NumberOfGears}|| Manufacturer:{Manufacturer}";
 }

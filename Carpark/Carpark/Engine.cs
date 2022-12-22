@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Carpark;
+﻿namespace Carpark;
 
 public class Engine
 {
-
     public decimal Power { get; set; }
     public decimal Volume { get; set; }
     public string? Type { get; set; }
@@ -23,5 +16,4 @@ public class Engine
     }
 
     public override string ToString() => $"Power:{Power}|| Volume:{Volume}|| Type:{Type} ||SerialNmber:{SerialNumber} ";
-    
 }

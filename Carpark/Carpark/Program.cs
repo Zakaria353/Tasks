@@ -1,12 +1,9 @@
-﻿using System;
-using Carpark;
-
+﻿using Carpark;
 
 public class Program
 {
     public static void Main()
     {
-
         PassengerCar passcar = new PassengerCar();
         Console.WriteLine("Passenger car Engine properties");
         passcar.showEngine();
@@ -38,6 +35,5 @@ public class Program
         scar.showTransmission();
         Console.WriteLine("\nScooter Chassis properties");
         scar.showChassis();
-                
     }
 }

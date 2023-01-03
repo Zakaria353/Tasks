@@ -2,16 +2,16 @@
 
 internal class PassengerCar
 {
-    public void showEngine()
+    public void ShowEngine()
     {
-        Engine[] engines = { new Engine(160, 2.0m, "Gas", "PP61B564D64") };
+        Engine[] engines = { new Engine(160, 2.0m, "Gasoline", "PP61B564D64") };
         foreach (Engine engine in engines)
         {
             Console.WriteLine(engine);
         }
     }
 
-    public void showTransmission()
+    public void ShowTransmission()
     {
         Transmission[] transmissions = { new Transmission("Manual", 5, "Axle.inc") };
         foreach (Transmission trans in transmissions)
@@ -20,7 +20,7 @@ internal class PassengerCar
         }
     }
 
-    public void showChassis()
+    public void ShowChassis()
     {
         Chassis[] chassis = { new Chassis("624550/R17 85H", 17, "1135 lbs") };
         foreach (Chassis chassy in chassis)

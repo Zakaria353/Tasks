@@ -6,34 +6,34 @@ public class Program
     {
         PassengerCar passcar = new PassengerCar();
         Console.WriteLine("Passenger car Engine properties");
-        passcar.showEngine();
+        passcar.ShowEngine();
         Console.WriteLine("\nPassenger car Transmission properties");
-        passcar.showTransmission();
+        passcar.ShowTransmission();
         Console.WriteLine("\nPassenger car Chassis properties");
-        passcar.showChassis();
+        passcar.ShowChassis();
 
         Truck trcar = new Truck();
         Console.WriteLine(new string('*', 70) + "\nTruck Engine properties");
-        trcar.showEngine();
+        trcar.ShowEngine();
         Console.WriteLine("\nTruck Transmission properties");
-        trcar.showTransmission();
+        trcar.ShowTransmission();
         Console.WriteLine("\nTruck Chassis properties");
-        trcar.showChassis();
+        trcar.ShowChassis();
 
         Bus bcar = new Bus();
         Console.WriteLine(new string('*', 70) + "\nBus Engine properties");
-        bcar.showEngine();
+        bcar.ShowEngine();
         Console.WriteLine("\nBus Transmission properties");
-        bcar.showTransmission();
+        bcar.ShowTransmission();
         Console.WriteLine("\nBus Chassis properties");
-        bcar.showChassis();
+        bcar.ShowChassis();
 
         Scooter scar = new Scooter();
         Console.WriteLine(new string('*', 70) + "\nScooter Engine properties");
-        scar.showEngine();
+        scar.ShowEngine();
         Console.WriteLine("\nScooter Transmission properties");
-        scar.showTransmission();
+        scar.ShowTransmission();
         Console.WriteLine("\nScooter Chassis properties");
-        scar.showChassis();
+        scar.ShowChassis();
     }
 }

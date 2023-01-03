@@ -2,7 +2,7 @@
 
 internal class Bus
 {
-    public void showEngine()
+    public void ShowEngine()
     {
         Engine[] engines = { new Engine(300, 6.7m, "Diesel", "BB1B59FD74O") };
         foreach (Engine engine in engines)
@@ -11,7 +11,7 @@ internal class Bus
         }
     }
 
-    public void showTransmission()
+    public void ShowTransmission()
     {
         Transmission[] transmissions = { new Transmission("Manual", 4, "BeP.inc") };
         foreach (Transmission trans in transmissions)
@@ -20,7 +20,7 @@ internal class Bus
         }
     }
 
-    public void showChassis()
+    public void ShowChassis()
     {
         Chassis[] chassis = { new Chassis("315/80R22.5", 22.5m, "992 lbs") };
         foreach (Chassis chassy in chassis)

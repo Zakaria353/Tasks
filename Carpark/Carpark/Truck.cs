@@ -2,7 +2,7 @@
 
 internal class Truck
 {
-    public void showEngine()
+    public void ShowEngine()
     {
         Engine[] engines = { new Engine(560, 14.8m, "Diesel", "TT371B56FD64U") };
         foreach (Engine engine in engines)
@@ -11,7 +11,7 @@ internal class Truck
         }
     }
 
-    public void showTransmission()
+    public void ShowTransmission()
     {
         Transmission[] transmissions = { new Transmission("9G-Tronic", 9, "eZx.inc") };
         foreach (Transmission trans in transmissions)
@@ -20,7 +20,7 @@ internal class Truck
         }
     }
 
-    public void showChassis()
+    public void ShowChassis()
     {
         Chassis[] chassis = { new Chassis("P215/65R20 98H", 20, "1653 lbs") };
         foreach (Chassis chassy in chassis)

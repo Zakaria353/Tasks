@@ -42,7 +42,6 @@ public class Collector : Engine
 
         foreach (var v in itemsquery)
         {
-
             foreach (var t in v)
             {
                 XElement format =
@@ -78,7 +77,6 @@ public class Collector : Engine
 
         foreach (var v in itemsquery)
         {
-
             ; foreach (var t in v)
             {
                 XElement format =
@@ -106,7 +104,6 @@ public class Collector : Engine
 
         foreach (var v in itemsquery)
         {
-
             foreach (var t in v)
             {
                 XElement format =

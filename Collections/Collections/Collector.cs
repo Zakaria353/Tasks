@@ -17,15 +17,15 @@ public class Collector : Engine
 
             { new Collector { TranportType = "Passengercar", Power = 160, Volume = 2.0m, Type = "Gasoline", SerialNumber = "PP61B564D64",
             TransmissionType = "Manual", NumberOfGears = 5, Manufacturer = "Axle.inc",
-            WheelsNumber = "624550/R17 85H", Number = 17, PermissibleLoad = "1135 lbs"} },
+            WheelsNumber = "624550/R17 85H", Number = 17, PermissibleLoad = "1135 lbs"}},
 
             { new Collector { TranportType= "Scooter", Power = 80, Volume = 1.0m, Type = "Electric", SerialNumber = "SS5B0112FDV",
             TransmissionType = "Automatic", NumberOfGears = 3, Manufacturer = "SCT.inc",
-            WheelsNumber = "120/70 – 12 51 S", Number = 12m, PermissibleLoad = "430 lbs"} },
+            WheelsNumber = "120/70 – 12 51 S", Number = 12m, PermissibleLoad = "430 lbs"}},
 
             { new Collector { TranportType = "Truck", Power = 560, Volume = 14.8m, Type = "Diesel", SerialNumber = "TT371B56FD64U",
             TransmissionType = "G-Tronic", NumberOfGears = 9, Manufacturer = "eZx.inc",
-            WheelsNumber = "P215/65R20 98H", Number = 20, PermissibleLoad = "1653 lbs"} }
+            WheelsNumber = "P215/65R20 98H", Number = 20, PermissibleLoad = "1653 lbs"}}
         };
     }
 

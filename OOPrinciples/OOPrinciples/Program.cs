@@ -35,7 +35,7 @@ public sealed class StartStop : ICommand
         Console.WriteLine("Press Enter to start program\n" +
         "Type \"exit\" to quit the program\n");
         ReceiveInput.StartProgram();
-        Console.WriteLine($"\n{_exit} Command was entered");
+        Console.WriteLine($"\n{_exit.ToUpper()} command was entered");
     }
 }
 
@@ -52,7 +52,7 @@ public class BrandCounter : ICommand
 
     public void Execute()
     {
-        Console.WriteLine("Counting number of car " + _count);
+        Console.Write("\nCounting number of car " + _count);
         _receiver.CountBrands(_count);
     }
 }
@@ -70,7 +70,7 @@ public class CarCounter : ICommand
 
     public void Execute()
     {
-        Console.WriteLine("Countnig car " + _count);
+        Console.Write("\nCountnig car " + _count);
         _receiver.QuantityCounter(_count);
     }
 }
@@ -88,7 +88,7 @@ public class AverageCostCounter : ICommand
 
     public void Execute()
     {
-        Console.WriteLine($"Countnig {_count} cost of cars");
+        Console.Write($"\nCountnig {_count} cost of cars");
         _receiver.AverageCostCounter(_count);
     }
 }
@@ -106,7 +106,7 @@ public class AverageCostPerBrand : ICommand
 
     public void Execute()
     {
-        Console.WriteLine($"Countnig {_count} cost per brand");
+        Console.Write($"\nCountnig {_count} cost per brand");
         _receiver.AverageCostPerBrand(_count);
     }
 }
@@ -225,7 +225,7 @@ public class ReceiveInput
         //Console.WriteLine(keyCount);
         if (keyCount != 0)
         {
-            Console.WriteLine($"\nAverage cost of the car:  {Sum / keyCount:0.##}");
+            Console.WriteLine($"\nAverage cost of the car is {Sum / keyCount:0.##}");
         }
     }
 
@@ -388,11 +388,12 @@ public class Invoker
         Invoker invoker = new Invoker();
         StartStop startStop = StartStop.GetInstance(receiver, "exit");
         startStop.Execute();
-        invoker.GetExit(StartStop.GetInstance(receiver, "exit"));
-        invoker.GetBrandCount(new BrandCounter(receiver, "brands"));
-        invoker.GetCarCount(new CarCounter(receiver, "quantity"));
-        invoker.GetAverageCost(new AverageCostCounter(receiver, "average"));
-        invoker.GetAverageCostPerBrand(new AverageCostPerBrand(receiver, "AVERAGE"));
-        invoker.ExecuteCommands();
+        //invoker.GetExit(StartStop.GetInstance(receiver, "exit"));
+        //invoker.GetBrandCount(new BrandCounter(receiver, "brands"));
+        //invoker.GetCarCount(new CarCounter(receiver, "quantity"));
+        //invoker.GetAverageCost(new AverageCostCounter(receiver, "average"));
+        ////enter brand name in GetAverageCostPerBrand to get output
+        //invoker.GetAverageCostPerBrand(new AverageCostPerBrand(receiver, "average")); 
+        //invoker.ExecuteCommands();
     }
 }

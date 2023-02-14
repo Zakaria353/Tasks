@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CharactersCounter;
+namespace SymbolCounter;
 
 public class CharactersCounter
 {
@@ -8,7 +8,7 @@ public class CharactersCounter
     private static int Counter = 1;
     private static char[]? charValues;
 
-    public static char[] CharBuilder(string? input)
+    public char[] CharBuilder(string? input)
     {
         stringBuilder.Append(input);
         var characters = stringBuilder.ToString().ToCharArray();
@@ -16,9 +16,10 @@ public class CharactersCounter
         return charValues;
     }
 
-    //UnequalCharactersCounter_ReturnsNumberOf_ConsecutiveUnqualCharacters
-    public static int UnequalCharactersCounter()
+    public int UnequalCharactersCounter()
     {
+        int totalUnequalSymbols = 0;
+
         if (charValues is not null && !charValues[0].Equals(charValues[1]))
         {
             Console.WriteLine($"\n1:  {charValues[0]}");
@@ -33,25 +34,26 @@ public class CharactersCounter
             if (!charValues[i].Equals(charValues[i - 1]))
             {
                 ++Counter;
+                totalUnequalSymbols = Counter;
                 Console.WriteLine($"{Counter}:  {charValues[i]}");
             }
             else
             {
                 Console.WriteLine("Not counting Repeats");
             }
-            //if methods are called in chain this will reset counter
-            //for the next functions to count properly
+
             if (charValues.Length - 1 == i)
             {
                 Counter = 1;
             }
         }
-        return Counter;
+        return totalUnequalSymbols;
     }
 
-    //EqualLettersCounter_ReturnsNumberOf_ConsecutiveEqualLetters
-    public static int EqualLettersCounter()
+    public int EqualLettersCounter()
     {
+        int totalEqualLetters = 0;
+
         for (int i = 0; i < charValues?.Length; i++)
         {
             if (i + 1 >= charValues.Length || charValues[i] != charValues[i + 1]
@@ -59,21 +61,24 @@ public class CharactersCounter
             {
                 if (char.IsLetter(charValues[i]) && Counter != 1)
                 {
+                    totalEqualLetters += Counter;
                     Console.WriteLine($"{Counter}: {charValues[i]}");
                 }
                 Counter = 1;
+
             }
             else
             {
                 Counter++;
             }
         }
-        return Counter;
+        return totalEqualLetters;
     }
 
-    //EqualDigitsCounter_ReturnsNumberOf_ConsecutiveEqualDigits
-    public static int EqualDigitsCounter()
+    public int EqualDigitsCounter()
     {
+        int totalEqualDigits = 0;
+
         for (int i = 0; i < charValues?.Length; i++)
         {
             if (i + 1 >= charValues.Length || charValues[i] != charValues[i + 1]
@@ -81,6 +86,7 @@ public class CharactersCounter
             {
                 if (char.IsDigit(charValues[i]) && Counter != 1)
                 {
+                    totalEqualDigits += Counter;
                     Console.WriteLine($"{Counter}: {charValues[i]}");
                 }
                 Counter = 1;
@@ -90,16 +96,18 @@ public class CharactersCounter
                 Counter++;
             }
         }
-        return Counter;
+        return totalEqualDigits;
     }
-    
+
     static void Main()
     {
-        Console.WriteLine("Enter characters");
-        var input = Console.ReadLine();
-        CharBuilder(input);
-        //UnequalCharactersCounter();
-        EqualLettersCounter();
-        //EqualDigitsCounter();
+        //CharactersCounter charactersCounter = new CharactersCounter();
+        //Console.WriteLine("Enter characters");
+        //var input = Console.ReadLine();
+        //charactersCounter.CharBuilder(input);
+        //charactersCounter.UnequalCharactersCounter();
+        ////charactersCounter.EqualLettersCounter();
+        ////charactersCounter.EqualDigitsCounter();
     }
 }
+

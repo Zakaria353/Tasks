@@ -65,7 +65,6 @@ public class CharactersCounter
                     Console.WriteLine($"{Counter}: {charValues[i]}");
                 }
                 Counter = 1;
-
             }
             else
             {
@@ -90,7 +89,6 @@ public class CharactersCounter
                     Console.WriteLine($"{Counter}: {charValues[i]}");
                 }
                 Counter = 1;
-
             }
             else
             {

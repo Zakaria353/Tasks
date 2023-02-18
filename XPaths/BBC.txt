@@ -1,0 +1,60 @@
+//span[@class="ssrcss-mwl823-IconWrapper-SearchIconWrapper e1gviwgp8"]
+//li[@id="more-menu-button"]/descendant::*[1]
+//span[@class="ssrcss-egnvhn-NavItemHoverState e1gviwgp18"]
+//header [@id="header-content"]/descendant::*/div/ul/li/a[@href="https://www.bbc.com/future"]/child::span
+//ul[@role="list"]/following-sibling::*/ul[2]/li[6]
+//ul[@role="list"]/following-sibling::*/ul[2]/li[5]
+//ul[@role="list"]/following-sibling::*/ul[2]/li[4]
+//ul[@role="list"]/following-sibling::*/ul[2]/li[3]
+//ul[@role="list"]/following-sibling::*/ul[2]/li[2]
+//ul[@role="list"]/following-sibling::*/ul[2]/li[1]
+//span[text()='Sign in']
+//header[@id="header-content"]/child::*/div/div/descendant::*/a/span[]
+//*[@id="header-content"]/descendant::*[8]
+//*[@id="header-content"]/child::*/following-sibling::*/div/div/div/a/child::*[1]/child::*
+//nav[@aria-label="BBC"]/following-sibling::*/div/following-sibling::*/div/div[1]/div/div/div[3]/a/span/child::*
+//*[@id="product-navigation-menu"]/div[2]/ul/li[10]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[9]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[8]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[7]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[6]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[5]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[4]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[3]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[2]/a/span
+//*[@id="product-navigation-menu"]/div[2]/ul/li[1]/a/span
+//div[@id="sticky-leaderboard"]/following-sibling::*[2]/div/div/ul/li[1]/div/div/div/div/div[1]/a
+//main [@id="main-content"]/div[14]/div/nav/h2[text()='Find us here']
+//main [@id="main-content"]/div[14]/div/nav/div/ul/li/div/div/div/div/a/span/p/span[text()='Twitter']
+//main [@id="main-content"]/div[14]/div/nav/div/ul/li/div/div/div/div/a/span/p/span[text()='Facebook']
+//main [@id="main-content"]/div[14]/div/nav/div/ul/li/div/div/div/div/a/span/p/span[text()='Instagram']
+//main [@id="main-content"]/div[14]/div/nav/div/ul/li/div/div/div/div/a/span/p/span[text()='YouTube']
+//main [@id="main-content"]//div[15]/div/nav/div/h2
+//main [@id="main-content"]//div[15]/div/nav/ul/li[2]/a
+
+//footer[@id="footer-content"]/div/div/div/ul/li[1]/a
+//footer[@id="footer-content"]/div/div/div/ul/li[2]/a
+//footer[@id="footer-content"]/div/div/div/ul/li[3]/a
+//footer[@id="footer-content"]/descendant::*[11]
+//footer[@id="footer-content"]//following-sibling::*[4]/a[text()='Worklife']
+//div[@id="root"]/div/div/div[3]/descendant::*[18]
+//footer[@id="footer-content"]/descendant::*[position()=17]
+//*[@id="footer-content"]/div/div/div/ul/li[8]/a
+//script[@id="dotmetrics"]/parent::*/div/div/div/div[3]/div/footer/div/div/div/ul/li[9]/a
+//footer[@id="footer-content"]/div/div/div/ul/li[10]/a
+//footer[@id="footer-content"]/div/div/div/ul/li[11]/a
+//footer[@id="footer-content"]/div/div/div/ul/li[12]/a
+ 
+//footer[@id="footer-content"]/div/div/div/ul/following::*/div/ul/li[1]
+//footer[@id="footer-content"]/div/div/div/ul/following-sibling::*/div/ul/li[2]
+//*[@id="footer-content"]/descendant::*[37]
+//*[@id="footer-content"]/descendant::*[39]
+//*[@id="footer-content"]/descendant::*[41]
+//*[@id="footer-content"]/descendant::*[43]
+//*[@id="footer-content"]/descendant::*[45]
+//*[@id="footer-content"]/div/div/div/div/div/ul/li[8]/a
+//*[text()='Why you can trust the BBC']
+//*[text()='Advertise with us']
+//*[text()='AdChoices / Do Not Sell My Info']
+//*[@id="footer-content"]/div/div/div/div/p/text()
+//*[@id="footer-content"]/div/div/div/div/p/a

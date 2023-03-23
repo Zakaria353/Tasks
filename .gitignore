@@ -1,9 +1,9 @@
 *.db
 *.log
-.vs/
 *.sln
 *.csproj
-.editorconfig
+*.editorconfig
+.vs/
 bin/
 target/
 obj/

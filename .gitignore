@@ -1,1 +1,6 @@
+*.db
+*.log
 .vs/
+bin/
+target/
+

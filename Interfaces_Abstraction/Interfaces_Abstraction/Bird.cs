@@ -3,24 +3,29 @@
 internal class Bird : IFlyable
 {
     public Coords currentPosition = new Coords(22, 33, 45);
-    public double flySpeed = RandomSpeed(); //storing random values in variables
-    public double flyTime = RandomTime();   //for later operations;
-    public const double maxDistance = 11000; //storing value that should not be changed
+    //storing random values in variables for later operations;
+    public double flySpeed = RandomSpeed(); 
+    public double flyTime = RandomTime();   
+    public const double maxDistance = 11000;
 
-    static int RandomSpeed() //randomly generating speex. max 0-20km/h 
+    //randomly generating speex. max 0-20km/h 
+    static int RandomSpeed() 
     {
         var rnd = new Random();
         return rnd.Next(0, 21);
     }
 
-    static int RandomTime() //randomly generating fly times in hours. max 5hr
+    //randomly generating fly times in hours. max 5hr
+    static int RandomTime() 
     {
         var rnd = new Random();
         return rnd.Next(0, 6);
     }
 
-    public double FlyTo()  //calculating distance and returning its value
-    {                      //if distance exceeds 11000km throwing exception
+    //calculating distance and returning its value
+    //if distance exceeds 11000km throwing exception
+    public double FlyTo()  
+    {                      
         double distance = 0;
 
         if (flySpeed != 0 && flyTime != 0)
@@ -28,7 +33,8 @@ internal class Bird : IFlyable
             Console.WriteLine($"Bird speed: {flySpeed}km/h \nBird flyTime: {flyTime}min");
             distance = flySpeed * flyTime;
         }
-        else  //if flySpeed or flyTime is 0 then both of these variables should 0;
+        //if flySpeed or flyTime is 0 then both of these variables should be 0;
+        else
         {
             flySpeed = 0;
             flyTime = 0;
@@ -43,7 +49,8 @@ internal class Bird : IFlyable
         return distance;
     }
 
-    public double GetFlyTime()  //returning amount of time bird flew
+    //returning amount of time bird flew
+    public double GetFlyTime()  
     {
         return flyTime;
     }

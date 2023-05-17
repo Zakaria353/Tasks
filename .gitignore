@@ -1,7 +1,5 @@
 *.db
 *.log
-*.sln
-*.csproj
 *.editorconfig
 .vs/
 bin/

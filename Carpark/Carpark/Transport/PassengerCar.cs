@@ -1,4 +1,4 @@
-﻿using Carpark;
+﻿namespace Carpark;
 
 internal class PassengerCar
 {   

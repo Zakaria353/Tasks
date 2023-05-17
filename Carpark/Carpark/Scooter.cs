@@ -2,6 +2,21 @@
 
 internal class Scooter
 {
+    private string? _scooterField;
+
+    public string ScooterField
+    {
+        get => _scooterField!;
+        set
+        {
+            if (value != "Food delivery scooter:")
+            {
+                throw new InvalidOperationException("Invalid scooter type");
+            }
+            _scooterField = value;
+        }
+    }
+
     public void ShowEngine()
     {
         Engine[] engines = { new Engine(80, 1.0m, "Electric", "SS5B0112FDV") };

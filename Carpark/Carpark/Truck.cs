@@ -2,6 +2,8 @@
 
 internal class Truck
 {
+    public string? TruckField { get; set; } = "Company owned cargo truck";
+
     public void ShowEngine()
     {
         Engine[] engines = { new Engine(560, 14.8m, "Diesel", "TT371B56FD64U") };

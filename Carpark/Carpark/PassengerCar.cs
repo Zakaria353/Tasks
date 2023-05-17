@@ -1,7 +1,9 @@
 ﻿using Carpark;
 
 internal class PassengerCar
-{
+{   
+    public const int passengerField = 6;
+
     public void ShowEngine()
     {
         Engine[] engines = { new Engine(160, 2.0m, "Gasoline", "PP61B564D64") };

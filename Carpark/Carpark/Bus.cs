@@ -2,6 +2,8 @@
 
 internal class Bus
 {
+    public readonly string busField = "Transport is a school bus and its yellow";
+
     public void ShowEngine()
     {
         Engine[] engines = { new Engine(300, 6.7m, "Diesel", "BB1B59FD74O") };

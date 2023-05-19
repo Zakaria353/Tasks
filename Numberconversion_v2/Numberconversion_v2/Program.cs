@@ -4,8 +4,8 @@ public class Numberconversion
 {
     public static void NumberConverter(string numberSystemInt, string numberToConvertInt)
     {
-        int numberSystem = 0; //Convert.ToInt32(numberSystemInt);
-        int numberToConvert = 0;// Convert.ToInt32(numberToConvertInt);
+        int numberSystem = default; 
+        int numberToConvert = default;
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
         try
@@ -18,7 +18,6 @@ public class Numberconversion
         {
             Console.WriteLine("Invalid value, only integers are allowed");
         }
-        finally { sb.Clear(); }
 
         if (numberSystem == 2)
         {
@@ -330,7 +329,6 @@ public class Numberconversion
                         };
                     }
                 }
-
                 else
                 {
                     sb.Append(remainder);
@@ -349,14 +347,19 @@ public class Numberconversion
                 }
             }
         }
-        //else
-        //{
-        //    Console.WriteLine("Wrong number system or decimal value, try again!");
-        //}
+        else
+        {   
+            List<int> digits = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 16, 20 };
+            if (!digits.Contains(numberSystem))
+            {
+                Console.WriteLine("Invalid number system, try again!");
+            }
+        }
     }
 
     public static void Main()
     {
+        Console.WriteLine("To quit press q");
         var endapp = false;
         while (!endapp)
         {   
@@ -367,12 +370,20 @@ public class Numberconversion
                 break;
             }
 
+            bool avoidRedundantError = Int32.TryParse(numberSystem, out _);
+            if (avoidRedundantError == false)
+            {
+                Console.WriteLine("Invalid value, integers only");
+                continue;
+            }
+
             Console.Write("Enter decimal number: ");
             string? numberToConvert = Console.ReadLine();          
             if (numberToConvert == "q")
             {
                 break;
             }
+
             NumberConverter(numberSystem, numberToConvert);
             Console.Write("\n");
         }

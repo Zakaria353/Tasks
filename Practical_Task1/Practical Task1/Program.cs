@@ -1,31 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class Task1
 {
     public static void Read(string input)
     {
-        char[] charArray = input.ToCharArray();
-        string charToString = new string(charArray);
-        int count = 0;
+        List<char> uniqueChars = new List<char>();
 
-        for (int i = 1; i < charToString.Length; i++)
+        foreach (char c in input)
         {
-            count += 1;
-            if (!charToString[i - 1].Equals(charArray[i]))
-                Console.WriteLine($"{charToString[i]} {count + 1}");
-            else
+            if (!uniqueChars.Contains(c))
             {
-                Console.WriteLine("~");
+                uniqueChars.Add(c);
             }
+        }
+
+        foreach (char v in uniqueChars)
+        {
+            Console.Write(v);
         }
     }
 
     public static void Main()
     {
-        Console.WriteLine("repeated values will be replaced by \"~\"");
-        String inputString = Console.ReadLine();
-        Console.WriteLine("\ninput results: ");
-        Console.WriteLine($"{inputString[0]} 1");
-        Read(inputString);
+        Console.Write("Input values:");
+        string input = Console.ReadLine();
+        Read(input);
     }
 }

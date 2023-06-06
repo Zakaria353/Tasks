@@ -1,6 +1,6 @@
 ﻿namespace Interfaces.Abstraction;
 
-internal class Drone : IFlyable
+public class Drone : IFlyable
 {
     public Coords currentPosition = new Coords(40, 60, 95);
     public const  double distance1K = 1000; 
@@ -10,15 +10,15 @@ internal class Drone : IFlyable
     //randomly generating drone fly time. max 30min
     static int RandomTime() 
     {
-        var rnd = new Random();
-        return rnd.Next(0, 31);
+        var randomTime = new Random();
+        return randomTime.Next(0, 31);
     }
 
     //randomly generating drone speed. max 33kmh
     static int RandomSpeed() 
     {
-        var rnd = new Random();
-        return rnd.Next(0, 34);
+        var randomSpeed = new Random();
+        return randomSpeed.Next(0, 34);
     }
 
     //calculating hovering time in 30mins, max amount of hovers 3, max 3 mins of hovering;

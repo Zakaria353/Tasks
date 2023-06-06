@@ -1,6 +1,6 @@
 ﻿namespace Interfaces.Abstraction;
 
-internal class Bird : IFlyable
+public class Bird : IFlyable
 {
     public Coords currentPosition = new Coords(22, 33, 45);
     //storing random values in variables for later operations;
@@ -11,15 +11,15 @@ internal class Bird : IFlyable
     //randomly generating speex. max 0-20km/h 
     static int RandomSpeed() 
     {
-        var rnd = new Random();
-        return rnd.Next(0, 21);
+        var randomSpeed = new Random();
+        return randomSpeed.Next(0, 21);
     }
 
     //randomly generating fly times in hours. max 5hr
     static int RandomTime() 
     {
-        var rnd = new Random();
-        return rnd.Next(0, 6);
+        var randomTime = new Random();
+        return randomTime.Next(0, 6);
     }
 
     //calculating distance and returning its value

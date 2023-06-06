@@ -1,6 +1,6 @@
 ﻿namespace Interfaces.Abstraction;
 
-internal class Airplane : IFlyable
+public class Airplane : IFlyable
 {
     public Coords currentPosition = new Coords(115, 145, 185);
     //Constants storing values that should not be changed;
@@ -14,15 +14,15 @@ internal class Airplane : IFlyable
     //Randomly generating flight time
     public static int RandomTime() 
     {
-        var rnd = new Random();
-        return rnd.Next(0, 6);
+        var randomTime = new Random();
+        return randomTime.Next(0, 6);
     }
 
     //Randomly generating variable distance
     public static int VariableDistance() 
     {
-        var rnd = new Random();
-        return rnd.Next(100, 933);
+        var randomDistance = new Random();
+        return randomDistance.Next(100, 933);
     }
 
     //calculating speed based on the distance travelled
@@ -51,7 +51,7 @@ internal class Airplane : IFlyable
         //throwing if plane speed goes above maximum speed
         if (currentSpeed > maxSpeed)  
         {
-            throw new Exception("This plane cannot go beyond 1046km/h ");
+            throw new Exception("This plane cannot go beyond 1040km/h ");
         }
 
         return currentSpeed;
